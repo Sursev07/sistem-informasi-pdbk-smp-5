@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Edumin - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+	
+	<!-- Pick date -->
+    <link rel="stylesheet" href="../vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="../vendor/pickadate/themes/default.date.css">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+      <!--**********************************
+          Nav header start
+      ***********************************-->
+      <div class="nav-header">
+        <a href="../index.html" class="brand-logo">
+            <span>Sispenma</span>
+            <img class="logo-abbr" src="../images/logo-white-2.png" alt="">
+        </a>
+
+        <div class="nav-control">
+            <div class="hamburger">
+                <span class="line"></span><span class="line"></span><span class="line"></span>
+            </div>
+        </div>
+    </div>
+    <!--**********************************
+        Nav header end
+    ***********************************-->
+
+      <!--**********************************
+          Header start
+      ***********************************-->
+      <div class="header">
+        <div class="header-content">
+            <nav class="navbar navbar-expand">
+                <div class="collapse navbar-collapse justify-content-between">
+                    <div class="header-left">
+                    </div>
+
+                    <ul class="navbar-nav header-right">
+                        <li class="nav-item dropdown notification_dropdown">
+                            <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                </svg>
+                                <div class="pulse-css"></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <ul class="list-unstyled">
+                                    <li class="media dropdown-item">
+                                        <span class="success"><i class="ti-user"></i></span>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <span class="notify-time">3:20 am</span>
+                                    </li>
+                                    <li class="media dropdown-item">
+                                        <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                            </a>
+                                        </div>
+                                        <span class="notify-time">3:20 am</span>
+                                    </li>
+                                    <li class="media dropdown-item">
+                                        <span class="danger"><i class="ti-bookmark"></i></span>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <span class="notify-time">3:20 am</span>
+                                    </li>
+                                    <li class="media dropdown-item">
+                                        <span class="primary"><i class="ti-heart"></i></span>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                            </a>
+                                        </div>
+                                        <span class="notify-time">3:20 am</span>
+                                    </li>
+                                    <li class="media dropdown-item">
+                                        <span class="success"><i class="ti-image"></i></span>
+                                        <div class="media-body">
+                                            <a href="#">
+                                                <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <span class="notify-time">3:20 am</span>
+                                    </li>
+                                </ul>
+                                <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown header-profile">
+                            <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                <img src="../images/profile/education/pic1.jpg" width="20" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                               
+                                <a href="../page-login.html" class="dropdown-item ai-icon">
+                                    <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                    <span class="ml-2">Logout </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+      <!--**********************************
+          Sidebar start
+      ***********************************-->
+      <div class="dlabnav">
+        <div class="dlabnav-scroll">
+            <ul class="metismenu" id="menu">
+                <li class="nav-label first">Main Menu</li>
+                <li>
+                    <a class="" href="../index.html" aria-expanded="false">
+          <i class="la la-home"></i>
+          <span class="nav-text">Beranda</span>
+        </a>
+                </li>
+                <li>
+                    <a class="" href="list-students.html" aria-expanded="false">
+                      <i class="la la-users"></i>
+                      <span class="nav-text">Siswa</span>
+                    </a>
+                </li>
+                <li><a class="" href="javascript:void()" aria-expanded="false">
+                    <i class="la la-book"></i>
+                    <span class="nav-text">Materi Pembelajaran</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="../all-library.html">Daftar Materi</a></li>
+                    <li><a href="../add-library.html">Tambah Materi</a></li>
+                </ul>
+                </li>
+                    <li><a class="ai-icon" href="../event-management.html" aria-expanded="false">
+                            <i class="la la-calendar"></i>
+                            <span class="nav-text">Agenda Konsultasi</span>
+                        </a>
+                    </li>
+                    <li><a class="" href="../kurikulum-list.html" aria-expanded="false">
+                        <i class="la la-building"></i>
+                        <span class="nav-text">Kurikulum</span>
+                    </a>
+            </li>
+      <li><a class="" href="../laporan-perkembangan-index.html" aria-expanded="false">
+          <i class="la la-graduation-cap"></i>
+          <span class="nav-text">Laporan Perkembangan</span>
+        </a>
+                </li>
+      
+    </ul>
+        </div>
+    </div>
+    <!--**********************************
+        Sidebar end
+    ***********************************-->
+
+		
+		
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+				
+				<div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Ubah Data Siswa</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="list-students.html">List Siswa</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Ubah Data Siswa</a></li>
+                        </ol>
+                    </div>
+                </div>
+				
+				<div class="row">
+					<div class="col-xl-12 col-xxl-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header py-3" style="background-color: #4D44B5;">
+								<h5 class="card-title" style="color: white;">Detail Siswa</h5>
+							</div>
+							<div class="card-body">
+                                <form action="#" method="post">
+									<div class="row">
+                                        <div class="col-3 text-center">
+                                            <div class="profile-photo">
+                                                <img src="../images/1226299100.png" class="img-fluid rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Nama Lengkap</label>
+                                                        <input type="text" class="form-control" value="Michael Kusuma Wijaya">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Nama panggilan</label>
+                                                        <input type="text" class="form-control" value="Mike">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Tempat Lahir</label>
+                                                        <input type="text" class="form-control" value="Jakarta">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Tanggal Lahir</label>
+                                                        <input name="datepicker" class="datepicker-default form-control" id="datepicker1" value="31 Desember 2008">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Address</label>
+                                                        <textarea class="form-control" rows="5">Jl. Salemba Raya No.4, RW.5, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10430
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Email</label>
+                                                        <input type="text" class="form-control" value="michael@mail.com">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Nomot Telepon</label>
+                                                        <input type="text" class="form-control" value="087777777777">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Status</label>
+                                                        <select class="form-control">
+                                                            <option value="Class" selected>Aktif</option>
+                                                            <option value="html">Tidak Aktif</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Kelas</label>
+                                                        <select class="form-control">
+                                                            <option value="VII - A" selected>VII - A</option>
+                                                            <option value="VII - B">VII - B</option>
+                                                            <option value="VII - C">VII - C</option>
+                                                            <option value="VII - D">VII - D</option>
+                                                            <option value="VII - E">VII - E</option>
+                                                            <option value="VIII - A">VIII - A</option>
+                                                            <option value="VIII - B">VIII - B</option>
+                                                            <option value="VIII - C">VIII - C</option>
+                                                            <option value="VIII - D">VIII - D</option>
+                                                            <option value="VIII - E">VIII - E</option>
+                                                            <option value="IX - A">IX - A</option>
+                                                            <option value="IX - B">IX - B</option>
+                                                            <option value="IX - C">IX - C</option>
+                                                            <option value="IX - D">IX - D</option>
+                                                            <option value="IX - E">IX - E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Angkatan</label>
+                                                        <select class="form-control">
+                                                            <option value="2019/2020">2019/2020</option>
+                                                            <option value="2020/2021" selected>2020/2021</option>
+                                                            <option value="2021/2022">2021/2022</option>
+                                                            <option value="2022/2023">2022/2023</option>
+                                                            <option value="2023/2024">2023/2024</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Nama Orang Tua</label>
+                                                        <input type="text" class="form-control" value="John">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">No. HP Orang Tua</label>
+                                                        <input type="text" class="form-control" value="08123333333">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+									</div>
+								</form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- untuk psikotest -->
+                    <div class="col-xl-12 col-xxl-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header py-3" style="background-color: #4D44B5;">
+								<h5 class="card-title" style="color: white;">Detail Siswa</h5>
+							</div>
+							<div class="card-body">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Hobi</label>
+                                                <input type="text" class="form-control" value="Membaca buku dan membaca puisi">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Hal yang disukai</label>
+                                                <input type="text" class="form-control" value="Membaca buku tentang petualangan">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Hal yang tidak disukai</label>
+                                                <input type="text" class="form-control" value="Mendengarkan musik terlalu keras, dan suara berisik">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Kemampuan Pemahaman</label>
+                                                <input type="text" class="form-control" value="cukup baik">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Kemampuan Logika</label>
+                                                <input type="text" class="form-control" value="sangat baik">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Kemampuan Penalaran</label>
+                                                <input type="text" class="form-control" value="baik">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Gambaran Psikologi</label>
+                                                <textarea class="form-control" rows="5">Mike merupakan anak yang baik dan sangat gemar membaca. emosionalnya stabil dan mudah untuk berkomunikasi dengan teman-temannya</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Tentang Siswa</label>
+                                                <textarea class="form-control" rows="5">Hai namaku Michael, biasa dipanggil Mike. Walaupun aku tidak bisa melihat, aku tetap gemar membaca buku-buku yang dicetak dengan huruf braile. karena dengan membaca buku, aku bisa melihat dunia.</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Kategori PDBK</label>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio" checked="checked"> Tuna Netra </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio"> Tuna Rungu </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio"> Tuna Wicara </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio"> Tuna Grahita </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optradio"> Tuna Daksa </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <label class="form-label mb-2">Catatan Guru</label><br>
+                                            <div class="p-4">
+                                                <a data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">+ Tambah Catatan</a>
+                                                <div class="profile-personal-info">
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table id="example3" class="display" style="min-width: 845px">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th style="width: 25%;">Catatan</th>
+                                                                        <th>Tanggal</th>
+                                                                        <th>Pemberi Catatan</th>
+                                                                        <th>Kelas</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="spacer">
+                                                                        <td>Terus tingkatkan ya cara membacanya! sudah bagus tapi masih butuh improve</td>
+                                                                        <td>20-Okt-2022</td>
+                                                                        <td>Bu Seven</td>
+                                                                        <td>VII A</td>
+                                                                    </tr>
+                                                                    <tr class="spacer">
+                                                                        <td>Perbanyak buku-buku yang juga menunjang kemampuannya</td>
+                                                                        <td>20-Okt-2022</td>
+                                                                        <td>Bu Seven</td>
+                                                                        <td>VII A</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center mt-3">
+                                            <button type="button" class="btn btn-secondary sweet-detail-student-success w-50" data-dismiss="modal">Simpan Perubahan</button>
+                                        </div>
+                                    </div>
+								</form>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">SC 7 AKPSI </a> 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+            <!-- Modal Add Catatan -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah catatan guru</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Catatan</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-secondary sweet-success-catatan" data-dismiss="modal">Simpan</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+<script src="../vendor/global/global.min.js"></script>
+	<script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../js/custom.min.js"></script>
+	<script src="../js/dlabnav-init.js"></script>
+
+	<!-- Svganimation scripts -->
+    <script src="../vendor/svganimation/vivus.min.js"></script>
+    <script src="../vendor/svganimation/svg.animation.js"></script>
+    <script src="../js/styleSwitcher.js"></script>
+
+    <!-- Datatable -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../js/plugins-init/datatables.init.js"></script>
+
+    <!-- sweet alert -->
+    <script src="../vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+	
+	<!-- pickdate -->
+    <script src="../vendor/pickadate/picker.js"></script>
+    <script src="../vendor/pickadate/picker.time.js"></script>
+    <script src="../vendor/pickadate/picker.date.js"></script>
+	
+	<!-- Pickdate -->
+    <script src="../js/plugins-init/pickadate-init.js"></script>
+    <script src="../vendor/jqueryui/js/jquery-ui.min.js"></script>
+	
+    <script>
+        document.querySelector(".sweet-success-catatan").onclick = () => {
+            Swal.fire(
+                'Berhasil menyimpan data!',
+                'data catatan untuk siswa telah tersimpan',
+                'success'
+            )
+        }
+
+        document.querySelector(".sweet-detail-student-success").onclick = () => {
+        Swal.fire({
+            title: 'Menyimpan data',
+            text: "anda yakin akan menyumpan data siswa yang sudah diubah?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Simpan',
+            cancelButtonText: 'Batal'
+            })
+            .then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                    'Berhasil',
+                    'Data siswa berhasil disimpan',
+                    'success'
+                )
+                .then(res => {
+                    window.location = 'list-students.html'
+                })
+            }
+        })
+      }
+    </script>
+</body>
+</html>

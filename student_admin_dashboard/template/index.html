@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SisPenma - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin.css">
+    <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+
+
+	<!-- Pick date -->
+    <link rel="stylesheet" href="vendor/pickadate/themes/default.css">
+    <link rel="stylesheet" href="vendor/pickadate/themes/default.date.css">
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <span>Sispenma</span>
+                <img class="logo-abbr" src="images/logo-white-2.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li>
+                        <a class="" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Beranda</span>
+						</a>
+                    </li>
+                    <li>
+                        <a class="" href="students-page/list-students.html" aria-expanded="false">
+                          <i class="la la-users"></i>
+                          <span class="nav-text">Siswa</span>
+                        </a>
+                    </li>
+                    <li><a class="" href="javascript:void()" aria-expanded="false">
+                        <i class="la la-book"></i>
+                        <span class="nav-text">Materi Pembelajaran</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="all-library.html">Daftar Materi</a></li>
+                        <li><a href="add-library.html">Tambah Materi</a></li>
+                    </ul>
+                    </li>
+                        <li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+                                <i class="la la-calendar"></i>
+                                <span class="nav-text">Agenda Konsultasi</span>
+                            </a>
+                        </li>
+                    <li><a class="" href="kurikulum-list.html" aria-expanded="false">
+                        <i class="la la-building"></i>
+                        <span class="nav-text">Kurikulum</span>
+                    </a>
+                    </li>
+                <li><a class="" href="laporan-perkembangan-index.html" aria-expanded="false">
+                    <i class="la la-graduation-cap"></i>
+                    <span class="nav-text">Laporan Perkembangan</span>
+                </a>
+				</ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+		
+		<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+				    
+                <div class="row">
+                    <div class="col-xl-4 col-xxl-4 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Tahun Ajaran </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <select class="form-control form-control-lg">
+                                                <option>2022/2023</option>
+                                                <option>2020/2021</option>
+                                                <option>2019/2020</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                    <div class="col-xl-4 col-xxl-4 col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Kelas</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <select class="form-control form-control-lg">
+                                                <option>VII</option>
+                                                <option>VIII</option>
+                                                <option>IX</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label"> Start Date</label>
+                            <input name="datepicker" class="datepicker-default form-control" id="datepicker">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label"> End Date</label>
+                            <input name="datepicker" class="datepicker-default form-control" id="datepicker1">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="basic-form">
+                            <button type="submit" class="btn btn-primary mb-2">Export Laporan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+					<!-- <div class="col-xl-6 col-xxl-6 col-sm-12">
+						<div class="row">
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Total Students</h4>
+										<h3>3280</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-primary" style="width: 80%"></div>
+										</div>
+										<small>80% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">New Students</h4>
+										<h3>245</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-warning" style="width: 50%"></div>
+										</div>
+										<small>50% Increase in 25 Days</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Total Course</h4>
+										<h3>28</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-red" style="width: 76%"></div>
+										</div>
+										<small>76% Increase in 20 Days</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-xxl-6 col-sm-6">
+								<div class="widget-stat card">
+									<div class="card-body">
+										<h4 class="card-title">Fees Collection</h4>
+										<h3>25160$</h3>
+										<div class="progress mb-2">
+											<div class="progress-bar progress-animated bg-success" style="width: 30%"></div>
+										</div>
+										<small>30% Increase in 30 Days</small>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>					 -->
+					<div class="col-xl-12 col-xxl-12 col-sm-12">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">Laporan Perkembangan Mingguan</h3>
+							</div>
+							<div class="card-body">
+								<div id="morris_bar_2" class="morris_chart_height"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="calendar" class="app-fullcalendar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body" style="overflow-y: scroll; height:700px;">
+                                    <h4 class="card-intro-title">Berita Sekolah</h4>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row m-b-30">
+                                                        <div class="col-md-5">
+                                                            <div class="new-arrival-product">
+                                                                <div class="new-arrivals-img-contnent">
+                                                                    <img class="img-fluid rounded-sm" width="100%" src="https://cdn.antaranews.com/cache/800x533/2014/08/20140811Kegiatan-Perjusami-080814-ADB-4xx.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="new-arrival-content position-relative">
+                                                                <h4>Perjusa 2022</h4>
+                                                                <p class="price">20 November 2022</p>
+                                                                <p class="text-content">TATA TERTIB PESERTA PERKEMAHAN JUMAT-SABTU
+                                                                    SMP NEGERI 5 SURABAYA</p>
+                                                                    <p><a href="#">Baca selengkapnya ...</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row m-b-30">
+                                                        <div class="col-md-5">
+                                                            <div class="new-arrival-product">
+                                                                <div class="new-arrivals-img-contnent">
+                                                                    <img class="rounded-sm" src="http://www.smpn5sby.sch.id/DCIM/site/HematEnergi.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="new-arrival-content position-relative">
+                                                                <h4>Mari Hemat Energi!</h4>
+                                                                <p class="price">18 November 2022</p>
+                                                                <p class="text-content">Dalam rangka mengikuti lomba hemat energi yang diadakan oleh dinas lingkungan hidup Kota Surabaya, maka seluruh sekolah SMP Negeri wajib mengikuti lomba hemat energi, baik itu konservasi listrik maupun konservasi air. Diharapkan seluruh siswa-siswi SMP Negeri 5 ini peduli akan energi. Kenapa? Karena salah satu kebutuhan manusia adalah energi, terutama di daerah perkotaan adalah segala aktivitas dan kebutuhan itu memanfaatkan energi listrik. SMP Negeri 5 ini sudah memahami akan pentingnya manfaat energi bagi kehidupan. Salah satu yang harus dilakukan dalam upaya penghematan energi adalah kegiatan 3M yaitu, mencabut, mematikan, memanfaatkan.</p>
+                                                                <p><a href="#">Baca selengkapnya ...</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row m-b-30">
+                                                        <div class="col-md-5">
+                                                            <div class="new-arrival-product">
+                                                                <div class="new-arrivals-img-contnent">
+                                                                    <img class="img-fluid rounded-sm" src="http://galeri.smpn5sby.sch.id/site/cintasatwa2022.JPG" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="new-arrival-content position-relative">
+                                                                <h4>Cinta Satwa</h4>
+                                                                <p class="price">10 November 2022</p>
+                                                                <p class="text-content">Peringatan Hari Cinta Puspa dan Satwa (5 November) - Usai mengikuti upacara peringatan hari pahlawan pada 10 November 2022 para kader lingkungan SMP Negeri 5 Surabaya memenuhi agenda tahunannya yaitu melepas ikan-ikan yang secara simbolis menunjukkan kecintaan kader terhadap satwa.</p>
+                                                                <p><a href="#">Baca selengkapnya ...</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row m-b-30">
+                                                        <div class="col-md-5">
+                                                            <div class="new-arrival-product">
+                                                                <div class="new-arrivals-img-contnent">
+                                                                    <img class="img-fluid rounded-sm" src="https://cdn.antaranews.com/cache/800x533/2014/08/20140811Kegiatan-Perjusami-080814-ADB-4xx.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="new-arrival-content position-relative">
+                                                                <h4>Manfaatkan Sampah Organik!</h4>
+                                                                <p class="price">30 Oktober 2022</p>
+                                                                <p class="text-content">Sampah plastik masih menjadi momok bagi lingkungan. Sugesti buruk mengenai sampah plastik masih melekat di benak masyarakat. Plastik merupakan molekul poliester yang sulit diurai oleh tanah secara alami. Maka dari itu, dibutuhkan campur tangan manusia untuk mengolahnya. SMP Negeri 5 Surabaya menggunakan metode ecobrick untuk mendaur ulang plastik.</p>
+                                                                <p><a href="#">Baca selengkapnya ...</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BEGIN MODAL -->
+                        <div class="modal fade none-border" id="event-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"><strong>Add New Event</strong></h4>
+                                    </div>
+                                    <div class="modal-body"></div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success save-event waves-effect waves-light">Create
+                                            event</button>
+    
+                                        <button type="button" class="btn btn-danger delete-event waves-effect waves-light" data-dismiss="modal">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal Add Category -->
+                        <div class="modal fade none-border" id="add-category">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"><strong>Add a category</strong></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label class="control-label">Category Name</label>
+                                                    <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="control-label">Choose Category Color</label>
+                                                    <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
+                                                        <option value="success">Success</option>
+                                                        <option value="danger">Danger</option>
+                                                        <option value="info">Info</option>
+                                                        <option value="pink">Pink</option>
+                                                        <option value="primary">Primary</option>
+                                                        <option value="warning">Warning</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger waves-effect waves-light save-category" data-dismiss="modal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">SC 7 AKPSI </a> 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="js/custom.min.js"></script>
+		
+    <!-- Chart Morris plugin files -->
+    <script src="vendor/raphael/raphael.min.js"></script>
+    <script src="vendor/morris/morris.min.js"></script>
+		
+	
+	<!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+	
+		<!-- Demo scripts -->
+    <script src="js/dashboard/dashboard-2.js"></script>
+
+    <!-- Svganimation scripts -->
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+	
+    <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+
+    <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="js/plugins-init/fullcalendar-init.js"></script>
+
+    <!-- pickdate -->
+    <script src="vendor/pickadate/picker.js"></script>
+    <script src="vendor/pickadate/picker.time.js"></script>
+    <script src="vendor/pickadate/picker.date.js"></script>
+
+    <!-- Pickdate -->
+    <script src="js/plugins-init/pickadate-init.js"></script>
+</body>
+</html>

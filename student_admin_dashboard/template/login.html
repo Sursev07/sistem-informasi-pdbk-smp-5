@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SisPenma - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	  <link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/skin.css">
+    <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper min-vh-100" style="background-color: #F3F4FF;">
+      <div class="container min-vh-100">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-md-6 offset-md-3">
+            <div class="text-center">
+              <img src="images/logo-smpn-5.svg" alt="" class="img-fluid" style="width: 20%;">
+            </div>
+            <div class="p-5 mt-4" style="background-color: #C1BBEB; border-radius: 18px;">
+              <h3 class="text-center">Login</h3>
+              <!-- start: form login-->
+              <form onsubmit="login(event)">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="masukkan alamat email">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="masukkan password">
+                </div>
+                <div class="d-flex align-items-end flex-column">
+                  <button type="submit" class="btn btn-primary mt-2 rounded-pill">Submit</button>
+                </div>
+                <span id="err-msg" style="color:red; display: none;">Email atau Password yang anda masukkan salah</span>
+              </form>
+              <!-- end: form login -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="js/custom.min.js"></script>
+		
+    <!-- Chart Morris plugin files -->
+    <script src="vendor/raphael/raphael.min.js"></script>
+    <script src="vendor/morris/morris.min.js"></script>
+		
+	
+	<!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+	
+		<!-- Demo scripts -->
+    <script src="js/dashboard/dashboard-2.js"></script>
+	
+	<!-- Svganimation scripts -->
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Calendar -->
+    <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="js/plugins-init/fullcalendar-init.js"></script>
+
+  
+	<script src="js/dlabnav-init.js"></script>
+    <!--removeIf(production)-->
+
+	
+    <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+
+    <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="js/plugins-init/fullcalendar-init.js"></script>
+
+    <script>
+      function login(event) {
+        event.preventDefault();
+        var email = $('#exampleInputEmail1').val();
+        var password = $('#exampleInputPassword1').val();
+
+        if (email == 'guru@mail.com' && password == 'guru123') {
+          return window.location = './index.html'
+        }
+
+        if (email == 'orangtua@mail.com' && password == 'orangtua123') {
+          return window.location = './index-parent.html';
+        }
+
+        $('#err-msg').show();
+
+      }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SisPenma - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+	  <link rel="stylesheet" href="../css/skin.css">
+    <link href="../vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+      <div class="sk-three-bounce">
+          <div class="sk-child sk-bounce1"></div>
+          <div class="sk-child sk-bounce2"></div>
+          <div class="sk-child sk-bounce3"></div>
+      </div>
+  </div>
+  <!--*******************
+      Preloader end
+  ********************-->
+
+  <!--**********************************
+      Main wrapper start
+  ***********************************-->
+  <div id="main-wrapper">
+
+      <!--**********************************
+          Nav header start
+      ***********************************-->
+      <div class="nav-header">
+          <a href="../index.html" class="brand-logo">
+              <span>Sispenma</span>
+              <img class="logo-abbr" src="../images/logo-white-2.png" alt="">
+          </a>
+
+          <div class="nav-control">
+              <div class="hamburger">
+                  <span class="line"></span><span class="line"></span><span class="line"></span>
+              </div>
+          </div>
+      </div>
+      <!--**********************************
+          Nav header end
+      ***********************************-->
+
+      <!--**********************************
+          Header start
+      ***********************************-->
+      <div class="header">
+          <div class="header-content">
+              <nav class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse justify-content-between">
+                      <div class="header-left">
+                      </div>
+
+                      <ul class="navbar-nav header-right">
+                          <li class="nav-item dropdown notification_dropdown">
+                              <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                  <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                  </svg>
+                                  <div class="pulse-css"></div>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                  <ul class="list-unstyled">
+                                      <li class="media dropdown-item">
+                                          <span class="success"><i class="ti-user"></i></span>
+                                          <div class="media-body">
+                                              <a href="#">
+                                                  <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                                  </p>
+                                              </a>
+                                          </div>
+                                          <span class="notify-time">3:20 am</span>
+                                      </li>
+                                      <li class="media dropdown-item">
+                                          <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                          <div class="media-body">
+                                              <a href="#">
+                                                  <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                              </a>
+                                          </div>
+                                          <span class="notify-time">3:20 am</span>
+                                      </li>
+                                      <li class="media dropdown-item">
+                                          <span class="danger"><i class="ti-bookmark"></i></span>
+                                          <div class="media-body">
+                                              <a href="#">
+                                                  <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                  </p>
+                                              </a>
+                                          </div>
+                                          <span class="notify-time">3:20 am</span>
+                                      </li>
+                                      <li class="media dropdown-item">
+                                          <span class="primary"><i class="ti-heart"></i></span>
+                                          <div class="media-body">
+                                              <a href="#">
+                                                  <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                              </a>
+                                          </div>
+                                          <span class="notify-time">3:20 am</span>
+                                      </li>
+                                      <li class="media dropdown-item">
+                                          <span class="success"><i class="ti-image"></i></span>
+                                          <div class="media-body">
+                                              <a href="#">
+                                                  <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                  </p>
+                                              </a>
+                                          </div>
+                                          <span class="notify-time">3:20 am</span>
+                                      </li>
+                                  </ul>
+                                  <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                              </div>
+                          </li>
+                          <li class="nav-item dropdown header-profile">
+                              <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                  <img src="../images/profile/education/pic1.jpg" width="20" alt="">
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                 
+                                  <a href="../page-login.html" class="dropdown-item ai-icon">
+                                      <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                      <span class="ml-2">Logout </span>
+                                  </a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <!--**********************************
+          Header end ti-comment-alt
+      ***********************************-->
+
+      <!--**********************************
+          Sidebar start
+      ***********************************-->
+      <div class="dlabnav">
+        <div class="dlabnav-scroll">
+            <ul class="metismenu" id="menu">
+                <li class="nav-label first">Main Menu</li>
+                <li>
+                    <a class="" href="../index.html" aria-expanded="false">
+          <i class="la la-home"></i>
+          <span class="nav-text">Beranda</span>
+        </a>
+                </li>
+                <li>
+                    <a class="" href="list-students.html" aria-expanded="false">
+                      <i class="la la-users"></i>
+                      <span class="nav-text">Siswa</span>
+                    </a>
+                </li>
+                <li><a class="" href="javascript:void()" aria-expanded="false">
+                    <i class="la la-book"></i>
+                    <span class="nav-text">Materi Pembelajaran</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="../all-library.html">Daftar Materi</a></li>
+                    <li><a href="../add-library.html">Tambah Materi</a></li>
+                </ul>
+                </li>
+                    <li><a class="ai-icon" href="../event-management.html" aria-expanded="false">
+                            <i class="la la-calendar"></i>
+                            <span class="nav-text">Agenda Konsultasi</span>
+                        </a>
+                    </li>
+                    <li><a class="" href="../kurikulum-list.html" aria-expanded="false">
+                      <i class="la la-building"></i>
+                      <span class="nav-text">Kurikulum</span>
+                  </a>
+            </li>
+      <li><a class="" href="../laporan-perkembangan-index.html" aria-expanded="false">
+          <i class="la la-graduation-cap"></i>
+          <span class="nav-text">Laporan Perkembangan</span>
+        </a>
+                </li>
+      
+    </ul>
+        </div>
+    </div>
+      <!--**********************************
+          Sidebar end
+      ***********************************-->
+		
+		
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+          <div class="container-fluid">
+              <div class="row page-titles mx-0">
+                  <div class="col-sm-6 p-md-0">
+                      <div class="welcome-text">
+                          <h4>List Siswa</h4>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item active"><a href="edit-student.html">List Siswa</a></li>
+                      </ol>
+                  </div>
+              </div>
+          
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row tab-content">
+                    <div id="list-view" class="tab-pane fade active show col-lg-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">  </h4>
+                          <a href="add-student.html" class="btn btn-primary">+ Tambah Siswa</a>
+                        </div>
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table id="example3" class="display" style="min-width: 100%">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>No.</th>
+                                  <th>Nama</th>
+                                  <th>Kelas</th>
+                                  <th>No. Telepon</th>
+                                  <th>Email</th>
+                                  <th>Tanggal Lahir</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic1.jpg" alt=""></td>
+                                  <td><strong>01</strong></td>
+                                  <td>Michael Kusuma Wijaya</td>
+                                  <td>VII A</td>
+                                  <td><a href="edit-student.html"><strong>08788828938</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>michael@email</strong></a></td>
+                                  <td>2008/12/31</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>												
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic2.jpg" alt=""></td>
+                                  <td><strong>02</strong></td>
+                                  <td>Garrett Winters</td>
+                                  <td>VII A</td>
+                                  <td><a href="edit-student.html"><strong>0281662563</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>garret@email</strong></a></td>
+                                  <td>2011/07/25</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic3.jpg" alt=""></td>
+                                  <td><strong>03</strong></td>
+                                  <td>Ashton Cox</td>
+                                  <td>VIII D</td>
+                                  <td><a href="edit-student.html"><strong>0898332323</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>ashton@email</strong></a></td>
+                                  <td>2009/01/12</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic4.jpg" alt=""></td>
+                                  <td><strong>04</strong></td>
+                                  <td>Cedric Kelly</td>
+                                  <td>IX C</td>
+                                  <td><a href="edit-student.html"><strong>082667362763</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>kelly@email</strong></a></td>
+                                  <td>2012/03/29</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic5.jpg" alt=""></td>
+                                  <td><strong>05</strong></td>
+                                  <td>Airi Satou</td>
+                                  <td>VII A</td>
+                                  <td><a href="edit-student.html"><strong>09388938928</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>satou@email</strong></a></td>
+                                  <td>2008/11/28</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic6.jpg" alt=""></td>
+                                  <td><strong>06</strong></td>
+                                  <td>Brielle Williamson</td>
+                                  <td>VIII E</td>
+                                  <td><a href="edit-student.html"><strong>082773826</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>brielle@email</strong></a></td>
+                                  <td>2012/12/02</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic7.jpg" alt=""></td>
+                                  <td><strong>07</strong></td>
+                                  <td>Herrod Chandler</td>
+                                  <td>IX C</td>
+                                  <td><a href="edit-student.html"><strong>0827736726</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>chandler@email</strong></a></td>
+                                  <td>2012/08/06</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic8.jpg" alt=""></td>
+                                  <td><strong>08</strong></td>
+                                  <td>Rhona Davidson</td>
+                                  <td>VII B</td>
+                                  <td><a href="edit-student.html"><strong>071872873</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>rhona@email</strong></a></td>
+                                  <td>2010/10/14</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic9.jpg" alt=""></td>
+                                  <td><strong>09</strong></td>
+                                  <td>Colleen Hurst</td>
+                                  <td>IX B</td>
+                                  <td><a href="edit-student.html"><strong>08266736721</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>collen@email</strong></a></td>
+                                  <td>2009/09/15</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic10.jpg" alt=""></td>
+                                  <td><strong>10</strong></td>
+                                  <td>Sonya Frost</td>
+                                  <td>VII D</td>
+                                  <td><a href="edit-student.html"><strong>082773672673</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>sonya@email</strong></a></td>
+                                  <td>2008/12/13</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic1.jpg" alt=""></td>
+                                  <td><strong>11</strong></td>
+                                  <td>Jena Gaines</td>
+                                  <td>VIII D</td>
+                                  <td><a href="edit-student.html"><strong>08726663762</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>gaines@email</strong></a></td>
+                                  <td>2008/12/19</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../mages/profile/small/pic2.jpg" alt=""></td>
+                                  <td><strong>12</strong></td>
+                                  <td>Quinn Flynn</td>
+                                  <td>VII B</td>
+                                  <td><a href="edit-student.html"><strong>08277637627</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>flynn@email</strong></a></td>
+                                  <td>2013/03/03</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic3.jpg" alt=""></td>
+                                  <td><strong>13</strong></td>
+                                  <td>Charde Marshall</td>
+                                  <td>IX E</td>
+                                  <td><a href="edit-student.html"><strong>087625543542</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>info@email</strong></a></td>
+                                  <td>2008/10/16</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic4.jpg" alt=""></td>
+                                  <td><strong>14</strong></td>
+                                  <td>Haley Kennedy</td>
+                                  <td>IX A</td>
+                                  <td><a href="edit-student.html"><strong>08273672673</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>kennedy@email</strong></a></td>
+                                  <td>2012/12/18</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic5.jpg" alt=""></td>
+                                  <td><strong>15</strong></td>
+                                  <td>Tatyana Fitzpatrick</td>
+                                  <td>VII C</td>
+                                  <td><a href="edit-student.html"><strong>087999937872</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>fitz@email</strong></a></td>
+                                  <td>2010/03/17</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic6.jpg" alt=""></td>
+                                  <td><strong>16</strong></td>
+                                  <td>Michael Silva</td>
+                                  <td>VII A</td>
+                                  <td><a href="edit-student.html"><strong>087266523663</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>silva@email</strong></a></td>
+                                  <td>2012/11/27</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic7.jpg" alt=""></td>
+                                  <td><strong>17</strong></td>
+                                  <td>Paul Byrd</td>
+                                  <td>IX A</td>
+                                  <td><a href="edit-student.html"><strong>08277663562</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>byrd@email</strong></a></td>
+                                  <td>2010/06/09</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic8.jpg" alt=""></td>
+                                  <td><strong>18</strong></td>
+                                  <td>Gloria Little</td>
+                                  <td>IX D</td>
+                                  <td><a href="edit-student.html"><strong>0817267372</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>gloria@email</strong></a></td>
+                                  <td>2009/04/10</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic9.jpg" alt=""></td>
+                                  <td><strong>19</strong></td>
+                                  <td>Bradley Greer</td>
+                                  <td>VII C</td>
+                                  <td><a href="edit-student.html"><strong>08277673672</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>greer@email</strong></a></td>
+                                  <td>2012/10/13</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic10.jpg" alt=""></td>
+                                  <td><strong>20</strong></td>
+                                  <td>Dai Rios</td>
+                                  <td>VII E</td>
+                                  <td><a href="edit-student.html"><strong>087776762543</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>dai@email</strong></a></td>
+                                  <td>2012/09/26</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic1.jpg" alt=""></td>
+                                  <td><strong>21</strong></td>
+                                  <td>Jenette Caldwell</td>
+                                  <td>IX A</td>
+                                  <td><a href="edit-student.html"><strong>0826635261</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>jen@email</strong></a></td>
+                                  <td>2011/09/03</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic2.jpg" alt=""></td>
+                                  <td><strong>22</strong></td>
+                                  <td>Yuri Berry</td>
+                                  <td>VII A</td>
+                                  <td><a href="edit-student.html"><strong>089999892871</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>yuri@email</strong></a></td>
+                                  <td>2009/06/25</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic3.jpg" alt=""></td>
+                                  <td><strong>23</strong></td>
+                                  <td>Caesar Vance</td>
+                                  <td>VII C</td>
+                                  <td><a href="edit-student.html"><strong>09988983982</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>caesar@email</strong></a></td>
+                                  <td>2011/12/12</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic4.jpg" alt=""></td>
+                                  <td><strong>24</strong></td>
+                                  <td>Doris Wilder</td>
+                                  <td>VIII C</td>
+                                  <td><a href="edit-student.html"><strong>08887655454</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>doris@email</strong></a></td>
+                                  <td>2010/09/20</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic5.jpg" alt=""></td>
+                                  <td><strong>25</strong></td>
+                                  <td>Angelica Ramos</td>
+                                  <td>IX C</td>
+                                  <td><a href="edit-student.html"><strong>087767637628</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>ramos@email</strong></a></td>
+                                  <td>2009/10/09</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic6.jpg" alt=""></td>
+                                  <td><strong>26</strong></td>
+                                  <td>Gavin Joyce</td>
+                                  <td>VII E</td>
+                                  <td><a href="edit-student.html"><strong>089889887</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>joyce@email</strong></a></td>
+                                  <td>2010/12/22</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic7.jpg" alt=""></td>
+                                  <td><strong>27</strong></td>
+                                  <td>Jennifer Chang</td>
+                                  <td>VIII E</td>
+                                  <td><a href="edit-student.html"><strong>082777367263</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>jenny@email</strong></a></td>
+                                  <td>2010/11/14</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic8.jpg" alt=""></td>
+                                  <td><strong>28</strong></td>
+                                  <td>Brenden Wagner</td>
+                                  <td>VIII D</td>
+                                  <td><a href="edit-student.html"><strong>123 456 7890</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>brenden@email</strong></a></td>
+                                  <td>2011/06/07</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic9.jpg" alt=""></td>
+                                  <td><strong>29</strong></td>
+                                  <td>Fiona Green</td>
+                                  <td>VIII B</td>
+                                  <td><a href="edit-student.html"><strong>0928883782</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>info@email</strong></a></td>
+                                  <td>2010/03/11</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img class="rounded-circle" width="35" src="../images/profile/small/pic10.jpg" alt=""></td>
+                                  <td><strong>30</strong></td>
+                                  <td>Shou Itou</td>
+                                  <td>IX A</td>
+                                  <td><a href="edit-student.html"><strong>(123) 4567 890</strong></a></td>
+                                  <td><a href="edit-student.html"><strong>shou@email</strong></a></td>
+                                  <td>2011/08/14</td>
+                                  <td>
+                                    <a href="profile-student.html" class="btn btn-sm btn-warning"><i class="la la-info-circle"></i></a>
+                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger sweet-delete-student-success" data-toggle="modal" data-target="#ModalHapus"><i class="la la-trash-o"></i></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="../index.htm" target="_blank">SC 7 AKPSI </a> 2022</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+		<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="../vendor/global/global.min.js"></script>
+	  <script src="../vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../js/custom.min.js"></script>
+    <script src="../js/dlabnav-init.js"></script>	
+	
+	  <!-- Datatable -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../js/plugins-init/datatables.init.js"></script>
+	
+    <!-- sweet alert -->
+    <script src="../vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+    <!-- Svganimation scripts -->
+
+    <script src="../vendor/svganimation/vivus.min.js"></script>
+    <script src="../vendor/svganimation/svg.animation.js"></script>
+    <script src="../js/styleSwitcher.js"></script>
+
+
+    <script src="../vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script>
+      document.querySelector(".sweet-delete-student-success").onclick = () => {
+        Swal.fire({
+          title: 'Menghapus siswa',
+          text: "anda yakin akan menghapus data siswa?",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Hapus',
+          cancelButtonText: 'Batal'
+        }).then((result) => {
+          if (result.value) {
+            Swal.fire(
+              'Berhasil',
+              'Data siswa berhasil dihapus',
+              'success'
+            )
+          }
+        })
+      }
+    </script>
+	
+</body>
+</html>
